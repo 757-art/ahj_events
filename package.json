@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "babel": "^6.23.0",
+    "babel-loader": "^9.1.2",
     "babelrc": "^0.0.7",
     "cli": "^1.0.1",
     "core-js": "^3.27.1",
