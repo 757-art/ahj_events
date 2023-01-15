@@ -11,7 +11,11 @@ module.exports = merge(common, {
 
   // Spin up a server for quick development
   devServer: {
-    contentBase: path.resolve(__dirname, '/dist'),
+    static: {
+     directory: path.join(__dirname, 'dist')
+   
+    },
+      
     historyApiFallback: true,
     open: true,
     port: 8888,

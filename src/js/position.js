@@ -3,5 +3,6 @@ export default function getPosition(oldIndex) {
   do {
     newIndex = Math.floor(Math.random() * (15 + 1));
   } while (newIndex === oldIndex);
+  console.log(newIndex)
   return newIndex;
 }

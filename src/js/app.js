@@ -1,7 +1,5 @@
-import Gui from './main';
-import Logic from './game';
-
+import Logic from './main';
+import Gui from './game';
 const gui = new Gui();
-gui.init();
 const logic = new Logic(gui);
 logic.init();

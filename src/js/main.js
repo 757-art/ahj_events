@@ -9,6 +9,8 @@ export default class Logic {
   }
 
   init() {
+    this.gui.init()
+    console.log(this.gui.wrapper)
     this.gui.wrapper.addEventListener('click', this.checkField);
     this.gui.insertImg();
     this.timerId = setInterval(() => {
@@ -22,7 +24,7 @@ export default class Logic {
   checkScores(clickEvent) {
     if (this.scores.win >= 5 || this.scores.loose >= 5) {
       clearInterval(this.timerId);
-      this.gui.wrap.removeEventListener('click', this.checkField);
+      this.gui.wrapper.removeEventListener('click', this.checkField);
       this.gui.showScore(this.scores, 'Игра окончена');
       return true;
     }
@@ -32,6 +34,7 @@ export default class Logic {
   }
 
   checkField(e) {
+    console.log(e)
     if (e.target === this.gui.img) {
       this.scores.win += 1;
       this.gui.removeImg();
