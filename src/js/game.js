@@ -10,9 +10,9 @@ export default class Game {
   initGame(initGoblin) {
     this.root.addEventListener('click', (event) => {
       if (event.target.children.length !== 0) {
-        this.failCount + 1;
+        this.failCount += 1;
       } else {
-        this.winCount + 1;
+        this.winCount += 1;
       }
       if (this.failCount === 5 || this.winCount === 5) {
         this.gameOver();
