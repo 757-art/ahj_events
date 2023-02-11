@@ -1,0 +1,1 @@
+body{color:#999}#wrapper{display:grid;grid-template-columns:repeat(4,1fr);width:480px}#wrapper div{border:1px solid #999;height:120px}
