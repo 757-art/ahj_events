@@ -1,6 +1,6 @@
-import Goblin from "./goblin";
-import Field from "./field";
-import Game from "./game";
+import Goblin from './goblin';
+import Field from './field';
+import Game from './game';
 
 const root = document.getElementById('wrapper');
 
@@ -11,4 +11,3 @@ field.drawField();
 
 const goblin = new Goblin(field.cells);
 game.initGame(goblin.initGoblin.bind(goblin));
-
